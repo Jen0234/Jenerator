@@ -30,10 +30,14 @@ const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
  console.log(TenChar(10));
 
 
-//Password of Four Charactor Only Number 
-
-// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const shuffledArray = array.sort(() => 0.5 - Math.random());
-// console.log(shuffledArray)
+//Password of Four Digits Only Number 
+function fourDigits(length){
+    let result = '';
+    for (let i = 0; i < length; i++){
+        result += Math.floor(Math.random() * 10);
+    }
+    return result;
+}
+console.log(fourDigits(4));
 
 // declare the function 
