@@ -41,3 +41,5 @@ function fourDigits(length){
 console.log(fourDigits(4));
 
 // declare the function 
+
+
