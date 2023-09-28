@@ -1,9 +1,15 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: 'Sedgwick Ave Display', cursive;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+* ::after{
+   margin: 0;
+    padding: 0;   
 }
 :root {
     --color-primary:  #fff;
@@ -13,41 +19,47 @@
     --color-limegreen: #81fe7a;
 }
 
-/* header  and tag a */
+// header
 
-.hd {
+/* Style the header with a grey background and some padding */
+.header {
     overflow: hidden;
-    background-color: var(--color-second);
+    background-color: #f1f1f1;
     padding: 20px 10px;
-}
-.h-right a {
+  }
+  
+  /* Style the header links */
+  .header a {
     float: left;
-    color: var(--color-black);
+    color: black;
     text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-}
-.hd a.logo {
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger) */
+  .header a.logo {
     font-size: 25px;
     font-weight: bold;
   }
   
-  .hd a:hover {
+  /* Change the background color on mouse-over */
+  .header a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active*/
-  .hd a.active {
-    background-color: var(--color-second);
-    color: (--color-black);
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
   }
   
   /* Float the link section to the right */
-  .h-right {
+  .header-right {
     float: right;
   }
   
@@ -62,9 +74,3 @@
       float: none;
     }
   }
-
-.card{
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 0 0 45x;
-}
