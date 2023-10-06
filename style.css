@@ -92,6 +92,7 @@ h1{
    border: solid var(--color-auburn) 10px;
    padding: 10px 50px 20px;
    display: grid;
+   margin: 50px;
 }
 .black{
   border: solid 8px;
