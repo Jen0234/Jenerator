@@ -3,6 +3,8 @@ const lowerCase = [ 'abcdefghijklmnopqrstuvwxyz' ];
 const number = [ '0123456789' ];
 const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
 
+
+
 //Password of Eight Charactor
  const password = upperCase + lowerCase + number + specialCase ;
  function EightChar(length){
@@ -42,4 +44,10 @@ console.log(fourDigits(4));
 
 // declare the function 
 
+// function copyPass(){
+//     passwordInput.select();
+//     document.execCommand("copy");
+// }
 
+// var startbtn = document.querySelectorAll("button").classList.item(1);
+// console.log(startbtn);
