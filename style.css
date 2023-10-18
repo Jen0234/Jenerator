@@ -113,6 +113,7 @@ br{
 .box-p{
   border: solid 5px var(--color-limegreen);
   border-radius: 10px;
+  
 }
 
 button{
@@ -123,6 +124,8 @@ button{
 }
 input{
   padding: 5px 5px;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 10px;
 }
 a{
 color: #ff6600;

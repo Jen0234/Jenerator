@@ -2,10 +2,15 @@ const upperCase = [ 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' ];
 const lowerCase = [ 'abcdefghijklmnopqrstuvwxyz' ];
 const number = [ '0123456789' ];
 const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
+const generatePasswordBox = document.getElementById('password');
+const generateBtn = document.getElementById('generate');
+const eightBtn = document.getElementById('EightBtn');
+const tenBtn = document.getElementById('TenBtn');
+const fourBtn = document.getElementById('FourBtn');
 
 
 
-//Password of Eight Charactor
+//Password with Eight Charactor
  const password = upperCase + lowerCase + number + specialCase ;
  function EightChar(length){
     let result = '';
@@ -13,13 +18,19 @@ const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
     for (let i = 0; i < length; i++){
         result += password.charAt(Math.floor(Math.random() * passwordlength));
     }  
-     return result;  
- }
- console.log(EightChar(8));
+     return result;
+    }
+   
+    eightBtn.addEventListener("click", pressBtnEight);
+    
+    function pressBtnEight() {
+        generatePasswordBox.value = EightChar(8);
+        eightBtn.value = EightChar(8);
+      }
 
 
 
-//Password of Ten Charactor
+//Password with Ten Charactor
  tenPass = upperCase + lowerCase + number + specialCase ;
  function TenChar(length){
     let result = '';
@@ -29,7 +40,13 @@ const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
     }  
      return result;  
  }
- console.log(TenChar(10));
+
+ tenBtn.addEventListener("click", pressBtnTen);
+    
+ function pressBtnTen() {
+     generatePasswordBox.value = TenChar(10);
+     tenBtn.value = TenChar(10);
+   }
 
 
 //Password of Four Digits Only Number 
@@ -40,14 +57,15 @@ function fourDigits(length){
     }
     return result;
 }
-console.log(fourDigits(4));
 
-// declare the function 
+fourBtn.addEventListener("click", pressBtnFour);
+    
+function pressBtnFour() {
+    generatePasswordBox.value = fourDigits(4);
+    fourBtn.value = fourDigits(4);
+  }
 
-// function copyPass(){
-//     passwordInput.select();
-//     document.execCommand("copy");
-// }
-
-// var startbtn = document.querySelectorAll("button").classList.item(1);
-// console.log(startbtn);
+//copy Password Function
+  function  copyPassword() {
+    navigator.clipboard.writeText(generatePasswordBox.value);
+  }
