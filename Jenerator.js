@@ -7,7 +7,6 @@ const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
 const generatePasswordBox = document.getElementById('password');
 
 //button to generate password
-const generateBtn = document.getElementById('generate');
 const eightBtn = document.getElementById('EightBtn');
 const tenBtn = document.getElementById('TenBtn');
 const fourBtn = document.getElementById('FourBtn');

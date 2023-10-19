@@ -8,5 +8,3 @@ Our app will generate passwords that include a mix of:
 *  Special characters,
 
  ensuring maximum security for all of your accounts. Say goodbye to weak passwords and hello to peace of mind with our cutting-edge password generator app!
-
-
