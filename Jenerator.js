@@ -2,7 +2,11 @@ const upperCase = [ 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' ];
 const lowerCase = [ 'abcdefghijklmnopqrstuvwxyz' ];
 const number = [ '0123456789' ];
 const specialCase = [ '!"#$%&()*+-./:;<=>?@[^-`{|}~' ];
+
+//Password input box
 const generatePasswordBox = document.getElementById('password');
+
+//button to generate password
 const generateBtn = document.getElementById('generate');
 const eightBtn = document.getElementById('EightBtn');
 const tenBtn = document.getElementById('TenBtn');
@@ -29,8 +33,8 @@ const fourBtn = document.getElementById('FourBtn');
       }
 
 
-
 //Password with Ten Charactor
+
  tenPass = upperCase + lowerCase + number + specialCase ;
  function TenChar(length){
     let result = '';
@@ -49,7 +53,9 @@ const fourBtn = document.getElementById('FourBtn');
    }
 
 
+
 //Password of Four Digits Only Number 
+
 function fourDigits(length){
     let result = '';
     for (let i = 0; i < length; i++){

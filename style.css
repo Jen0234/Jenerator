@@ -11,7 +11,7 @@
 :root {
     --color-primary:  #fff;
     --color-second: #808080;
-    --color-black: #0000;
+    --color-black: black !important;
     --color-auburn: #ff6600;
     --color-limegreen: #81fe7a;
 }
@@ -29,7 +29,7 @@ header {
 /* Style the header links */
 header a {
   float: left;
-  color: black;
+  color: var(--color-black);
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -40,20 +40,20 @@ header a {
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger) */
 header a.logo {
-  font-size: 25px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 /* Change the background color on mouse-over */
 header a:hover {
   background-color: #ddd;
-  color: black;
+  color: var(--color-black);
 }
 
 /* Style the active/current link*/
 header a.active {
   background-color: var(--color-auburn);
-  color: white;
+  color: var(--color-primary);
 }
 
 /* Float the link section to the right */
@@ -103,7 +103,7 @@ span {
 
 .black{
   border: solid 8px;
-  background-color: black;
+  background-color: var(--color-black);
   margin: 0%;
   padding: 0;
 }
@@ -119,8 +119,8 @@ br{
 button{
   padding: 10px 20px;
   border-radius: 40%;
-  border-color: #81fe7a;
-  background-color: white;
+  border-color: var(--color-limegreen);
+  background-color: var(--color-primary);
 }
 input{
   padding: 5px 5px;
@@ -128,11 +128,19 @@ input{
   font-size: 10px;
 }
 a{
-color: #ff6600;
+color: var(--color-auburn);
 }
 p {
 font-family: 'Dela Gothic One', cursive;
 }
+article{
+  border : solid 10px;
+  border-image: url(Photo/F2C4EF2A-7469-4A51-83F1-B8DA8A36E08E.jpeg) 30/ 30px / 30px space;
+  border-image-repeat: repeat;
+
+}
 .question-box{
-  border: solid 10px ;
+  border: solid 10px var(--color-limegreen);
+   background-image: url(Photo/memememe.jpg);
+   color: var(--color-primary);
 }
